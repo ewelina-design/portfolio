@@ -23,8 +23,8 @@
 
             <nav id="main-nav">
                 <a href="#home" class="active"> Home</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#skills">Umiejętności</a>
+                <a href="#realizacje">Realizacje</a>
+                <a href="#skills">Usługi</a>
                 <a href="#contact">Kontakt</a>
             </nav>
     </header>
@@ -37,8 +37,8 @@
 
           <!-- wrap h2 + intro paragraph so they sit on the same line -->
           <div class="meta">
-            <h2 class="header-line-two" data-text="Projektantka graficzna">Projektantka graficzna</h2>
-            <p class="lead">Zajmuję się projektowaniem grafik wektorowych. Tworzę logo, wizytówki, ulotki i projekty do nadruku – w tym grafiki do print on demand. Zapraszam do współpracy!</p>
+            <h2 class="header-line-two" data-text="Graphic Designer & Content Creator">Graphic Designer & Content Creator</h2>
+            <p class="lead">Pomagam markom wyróżnić się dzięki przemyślanej identyfikacji wizualnej, kreatywnym treściom i angażującym materiałom wideo. Projektuję grafiki, tworzę content na social media i montuję filmy, dbając o spójność wizualną oraz charakter komunikacji marki. Z chęcią wesprę rozwój Twojego biznesu. Zapraszam do współpracy!</p>
           </div>
 
           <div class="social-icons">
@@ -49,15 +49,16 @@
         </div>
     </section>
 
- <section id="portfolio" class="portfolio hidden">
-    <h2>Portfolio</h2>
-    <div class="portfolio-tabs">
+ <section id="realizacje" class="realizacje hidden">
+    <h2>Realizacje</h2>
+    <div class="realizacje-tabs">
         <button class="tab-btn active" data-tab="logo">Logo</button>
         <button class="tab-btn" data-tab="wizytowki">Wizytówki</button>
         <button class="tab-btn" data-tab="menu">Ulotki/Menu</button>
+        <button class="tab-btn" data-tab="social">Social Media</button>
     </div>
 
-    <div class="portfolio-content">
+    <div class="realizacje-content">
         <div class="tab-section" id="logo">
             <div class="gallery">
                 
@@ -310,7 +311,7 @@
                 </div>
                 <div class="gallery-item">
                     <h3 class="project-title">Projekt 2 - Menu restauracji</h3>
-                    <img class="ah-main" src="zdrowa-micha-menu.jpg" alt="Projekt 2 menu" onclick="openLightbox('zdrowa-micha-menu.jpg')">
+                    <img class="ah-main" src="zdrowa-micha-menu.png" alt="Projekt 2 menu" onclick="openLightbox('zdrowa-micha-menu.png')">
                     <div class="gallery-caption">
                         Branża: gastronomiczna<br>
                         Typ projektu: projekt koncepcyjny<br>
@@ -345,18 +346,46 @@
                     </div>
                 </div>
             </div> </div> </div> </section>
+            <div class="tab-section" id="social" style="display:none;">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <h3 class="project-title">Prowadzenie profili w mediach społecznościowych</h3>
+                        <img src="sm_multilog.png" alt="Projekt 1 social" onclick="openLightbox('sm_multilog.png')">
+                        <div class="gallery-caption">
+                            Branża: transportowa<br>
+                            Typ projektu: projekt zrealizowany<br>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <h3 class="project-title">Projekt kreacji reklamowej</h3>
+                        <img class="ah-main" src="NordCamp_Mockup.png" alt="Reklama" onclick="openLightbox('NordCamp_Mockup.png')">
+                        <div class="gallery-caption">
+                            Branża: odzieżowa<br>
+                            Typ projektu: projekt koncepcyjny<br>
+                            <p>Projekt graficzny reklamy promującej kolekcję outdoorową Summer Edition, zaprezentowany w formie mobilnego mockupu z wyraźnym CTA.</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <h3 class="project-title">Miniaturki YouTube</h3>
+                        <img class="ah-main" src="miniatury.png" alt="Miniaturki YouTube" onclick="openLightbox('miniatury.png')">
+                        <div class="gallery-caption"></div>
+                    </div>
+                </div>
+            </div>
+            </div> </div> </div> </section>
 
     <section id="skills" class="skills hidden">
-  <h2>Umiejętności</h2>
+  <h2>Usługi</h2>
   <div class="project-text">
     <p>Zakres wykonywanych przeze mnie usług obejmuje:</p>
     <ul>
-      <li>Projektowanie logo, wizytówek, ulotek, menu</li>
-      <li>Projektowanie grafik wektorowych</li>
-      <li>Ilustracje print-on-demand</li>
-      <li>Tworzenie mock-up w celu prezentacji wizualnej produktu</li>
-      <li>Realizacja materiałów do social mediów (posty, rolki, grafiki promocyjne)</li>
-      <li>Programy: Adobe Illustrator, Adobe Photoshop, Inkscape, Figma, Canva </li>
+     <li>Projektowanie logo i identyfikacji wizualnej</li>
+     <li>Kompleksowa obsługa i prowadzenie profili w mediach społecznościowych</li>
+<li>Branding marki (kolorystyka, typografia, księga znaku)</li>
+<li>Projektowanie materiałów firmowych (wizytówki, ulotki, menu, banery, miniaturki, vouchery)</li>
+<li>Tworzenie mockupów i wizualizacji projektów</li>
     </ul>
   </div>
 </section>
@@ -530,14 +559,14 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const portfolioNav = document.querySelector('a[href="#portfolio"]');
-  const openPortfolioLogo = () => {
-    const portfolioSection = document.getElementById('portfolio');
-    if (portfolioSection) portfolioSection.classList.remove('hidden');
+  const realizacheNav = document.querySelector('a[href="#realizacje"]');
+  const openRealizacheLogo = () => {
+    const realizacheSection = document.getElementById('realizacje');
+    if (realizacheSection) realizacheSection.classList.remove('hidden');
 
     // activate logo tab button
-    const tabBtns = document.querySelectorAll('.portfolio-tabs .tab-btn');
-    const logoBtn = document.querySelector('.portfolio-tabs .tab-btn[data-tab="logo"]');
+    const tabBtns = document.querySelectorAll('.realizacje-tabs .tab-btn');
+    const logoBtn = document.querySelector('.realizacje-tabs .tab-btn[data-tab="logo"]');
     const tabSections = document.querySelectorAll('.tab-section');
 
     if (tabBtns && logoBtn) {
@@ -552,10 +581,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   };
 
-  if (portfolioNav) {
-    portfolioNav.addEventListener('click', function () {
+  if (realizacheNav) {
+    realizacheNav.addEventListener('click', function () {
       // allow any existing handlers to run, then ensure logo tab is shown
-      setTimeout(openPortfolioLogo, 40);
+      setTimeout(openRealizacheLogo, 40);
     });
   }
 });

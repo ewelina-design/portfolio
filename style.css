@@ -28,8 +28,8 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: black;
-    color: white;
+    background-color: #f4f0ec;
+    color: #222222;
 }
 
 header{
@@ -61,13 +61,13 @@ header{
 
 .logo img{
     display: block;
-    height: 80px; /* lub 100px */
+    height: 29px; /* zmniejszone o 40% z 48px */
     width: auto;
 }
 
 nav a{
     font-size: 1.8rem;
-    color: white;
+    color: #222222;
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -76,8 +76,8 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color: #a259ff;
-    border-bottom: 3px solid #a259ff;
+    color: #6e1f2a;
+    border-bottom: 3px solid #6e1f2a;
 }
 
 /* Hamburger button (hidden on desktop, shown on small screens) */
@@ -99,7 +99,7 @@ nav a.active{
     display: block;
     width: 32px;
     height: 4px;
-    background: white;
+    background: #222222;
     border-radius: 2px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -120,11 +120,11 @@ nav a.active{
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #a259ff;
-        border-bottom: 3px solid #a259ff;
+        border-left: 3px solid #6e1f2a;
+        border-bottom: 3px solid #6e1f2a;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
-        background-color: #161616;
+        background-color: #f4f0ec;
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
 
@@ -137,7 +137,7 @@ nav a.active{
         display: flex !important;
         position: relative;
         z-index: 250;
-        color: white;
+        color: #222222;
         cursor: pointer;
         pointer-events: auto;
     }
@@ -160,7 +160,7 @@ nav a.active{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #a259ff;
+        border-bottom: 0.5rem solid #6e1f2a;
     }
 }
 
@@ -178,7 +178,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: black;
+    background-color: #f4f0ec;
 }
 
 /* --- LINI A 1: "Cześć, tu Ewelina" (ANIMACJA PISANIA) --- */
@@ -187,8 +187,8 @@ section {
     font-weight: 700;
     width: 100%;
     line-height: 1.3;
-    color: white; 
-    border-right: 3px solid #a259ff; /* Dodano */
+    color: #222222; 
+    border-right: 3px solid #6e1f2a; /* Dodano */
     
     /* Wymagane dla animacji pisania */
     margin: 0;
@@ -211,8 +211,9 @@ section {
     position: relative;
     width: 18vw;
     border-radius: 50%;
-    box-shadow: 0 0 5px #ffffff, /* Delikatny, wewnętrzny blask (z nawiasami) */
-                0 0 10px #ffffff;     /* Dodatkowy, rozmyty blask dla efektu poświaty */
+    border: 3px solid #a14a57;
+    box-shadow: 0 0 5px #6e1f2a, /* Delikatny, wewnętrzny blask (z nawiasami) */
+                0 0 10px #6e1f2a;     /* Dodatkowy, rozmyty blask dla efektu poświaty */
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -229,45 +230,45 @@ section {
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid #a259ff;
+    border: 0.2rem solid #6e1f2a;
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #a259ff;
+    color: #6e1f2a;
 }
 
 .social-icons a:hover{
     color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: #a259ff;
-    box-shadow: 0  0 25px #a259ff;
+    background-color: #6e1f2a;
+    box-shadow: 0  0 25px #6e1f2a;
 }
 
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
-    background-color: black;
+    background-color: #f4f0ec;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #a259ff;
+    color: #6e1f2a;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid #a259ff;
+    border: 2px solid #6e1f2a;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .btn:hover{
     transform: scale3d(1.03);
-    background-color: #a259ff;
+    background-color: #6e1f2a;
     color: black;
-    box-shadow: 0 0 25px #a259ff;
+    box-shadow: 0 0 25px #6e1f2a;
 }
 
 /* --- ARCHIVED KEYFRAMES (No longer used - kept for reference) ---
-@keyframes type { 0% { width: 0; } 1%, 99%{ border-right: 3px solid #a259ff; } 100%{ border-right: none; } }
-@keyframes shring-animation { 0% { opacity: 0; width: 0; } 1% { opacity: 1; border-right: 3px solid #a259ff; } 100% { opacity: 1; width: 450px; border-right: 3px solid #a259ff; } }
+@keyframes type { 0% { width: 0; } 1%, 99%{ border-right: 3px solid #6e1f2a; } 100%{ border-right: none; } }
+@keyframes shring-animation { 0% { opacity: 0; width: 0; } 1% { opacity: 1; border-right: 3px solid #6e1f2a; } 100% { opacity: 1; width: 450px; border-right: 3px solid #6e1f2a; } }
 @keyframes blink { 50% { border-color: transparent; } }
 @keyframes cursor { to { border-left: 3px solid #ffffff; } }
 */
@@ -360,7 +361,7 @@ section {
 .project-text h3 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  color: #a259ff;
+  color: #6e1f2a;
   text-align: justify;
 }
 
@@ -382,7 +383,7 @@ section {
   max-width: 900px; /* was 140px, now bigger */
   border-radius: 0.7rem;
   cursor: pointer;
-  box-shadow: 0 0 8px #ffffff;
+  box-shadow: 0 0 8px #6e1f2a;
   transition: transform 0.2s;
   margin-bottom: 0.5rem;
 }
@@ -392,16 +393,11 @@ section {
 }
 
 .skills h2,
-.portfolio h2 {
+.realizacje h2 {
   font-size: 3.4rem;
-  color: #a259ff;
+  color: #6e1f2a;
   margin-bottom: 2rem;
   font-weight: 700;
-  text-align: left;
-}
-
-/* Center Portfolio section title */
-.portfolio h2 {
   text-align: center;
   width: 100%;
 }
@@ -415,12 +411,12 @@ section {
 .project-text li {
   font-size: 1.6rem;
   line-height: 1.6;
-  color: white;
+  color: #222222;
   text-align: justify;
   margin-bottom: 0.8rem;
 }
 
-/* Center and beautify Umiejętności section */
+/* Center and beautify Usługi section */
 .skills {
   display: flex;
   flex-direction: column;
@@ -428,6 +424,8 @@ section {
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
+  min-height: auto;
+  padding: 3rem 9% !important;
 }
 
 .skills h2 {
@@ -439,10 +437,10 @@ section {
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
-  background: #161616;
+  background: #f4f0ec;
   border-radius: 1.2rem;
-  box-shadow: 0 0 12px #ffffff;
-  padding: 2.8rem 2rem 0.8rem 1rem;
+  box-shadow: 0 0 12px #6e1f2a;
+  padding: 2rem 2rem 2rem 2rem;
   text-align: center;
   box-sizing: border-box;  /* include padding in width calculation */
   flex-shrink: 0;          /* prevent shrinking below max-width */
@@ -451,17 +449,17 @@ section {
 .skills .project-text ul {
   list-style: none;
   padding-left: 0;
-  margin: 2.5rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .skills .project-text li {
   font-size: 1.6rem;
-  color: white;
-  background: #222;
-  margin-bottom: 1.5rem;
+  color: #222222;
+  background: #f4f0ec;
+  margin-bottom: 1rem;
   border-radius: 0.7rem;
   padding: 1rem 0rem;
-  box-shadow: 0 0 6px #ffffff;
+  box-shadow: 0 0 6px #6e1f2a;
   text-align: center;
   transition: background 0.2s;
   width: auto;
@@ -469,12 +467,20 @@ section {
 }
 
 .skills .project-text li:hover {
-  background: #a259ff22;
+  background: #f4f0ec;
+}
+
+.skills .project-text li:last-child {
+  margin-bottom: 0;
 }
 
 /* fallback if that line is a paragraph, not a list item */
+.skills .project-text p {
+  color: #222222;
+}
+
 .skills .project-text p:last-of-type {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
@@ -518,7 +524,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
+  background: #f4f0ec;
   align-items: center;
   justify-content: center;
   cursor: zoom-out;
@@ -527,7 +533,7 @@ section {
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
-  bordergit-radius: 1rem;
+  border-radius: 1rem;
   box-shadow: 0 0 30px #000;
 }
 
@@ -538,9 +544,10 @@ section {
 .contact-form {
   max-width: 400px;
   margin: 0 auto 2rem auto;
-  background: #161616;
+  background: #f4f0ec;
   padding: 2rem 2.5rem;
   border-radius: 1.2rem;
+  border: 2px solid #6e1f2a;
   box-shadow: 0 0 12px #ffffff;
 }
 
@@ -553,9 +560,9 @@ section {
   width: 100%;
   padding: 1rem;
   border-radius: 0.7rem;
-  border: 1px solid #ffffff;
-  background: #222;
-  color: white;
+  border: 1px solid #6e1f2a;
+  background: #f4f0ec;
+  color: #222222;
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
   transition: border-color 0.2s;
@@ -563,7 +570,7 @@ section {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #a259ff;
+  border-color: #6e1f2a;
   outline: none;
 }
 
@@ -576,8 +583,8 @@ section {
   width: 100%;
   padding: 1rem;
   border-radius: 0.7rem;
-  background: #a259ff;
-  color: black;
+  background: #6e1f2a;
+  color: white;
   font-size: 1.7rem;
   font-weight: 600;
   border: none;
@@ -590,8 +597,8 @@ section {
 }
 
 .contact-form button:hover {
-  background: #8e3fff;
-  color: white;
+  background: #6e1f2a;
+  color: #f4f0ec;
 }
 
 .contact-info {
@@ -601,7 +608,7 @@ section {
 
 .contact-info p {
   font-size: 1.6rem; /* match portfolio description size */
-  color: white;
+  color: #222222;
   text-align: justify;
   margin-top: 2rem;
   margin-bottom: 0;
@@ -610,14 +617,14 @@ section {
 }
 
 .contact-info i {
-  color: #a259ff;
+  color: #6e1f2a;
   margin-right: 0.7rem;
   font-size: 1.7rem;
   vertical-align: middle;
 }
 
 .contact-info a {
-  color: #a259ff;
+  color: #6e1f2a;
   text-decoration: underline;
   font-size: 1.6rem;
 }
@@ -625,25 +632,34 @@ section {
 /* Make Kontakt title match Portfolio and center it */
 .contact h2 {
   font-size: 3.4rem;
-  color: #a259ff;
+  color: #6e1f2a;
   margin-bottom: 2rem;
   font-weight: 700;
   text-align: center;
   width: 100%;
 }
 
-/* Portfolio Tabs */
-.portfolio-tabs {
+/* Realizacje Tabs */
+.realizacje {
+  padding-top: 1rem;
+  min-height: auto;
+}
+
+.realizacje-content {
+  margin-top: 0;
+}
+
+.realizacje-tabs {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .tab-btn {
-  background: #161616;
-  color: #a259ff;
-  border: 2px solid #a259ff;
+  background: #f4f0ec;
+  color: #6e1f2a;
+  border: 2px solid #6e1f2a;
   border-radius: 2rem;
   padding: 1rem 2.5rem;
   font-size: 1.7rem;
@@ -654,13 +670,13 @@ section {
 
 .tab-btn.active,
 .tab-btn:hover {
-  background: #a259ff;
-  color: black;
+  background: #6e1f2a;
+  color: white;
 }
 
 /* Mobile: stack tabs vertically */
 @media (max-width: 768px) {
-  .portfolio-tabs {
+  .realizacje-tabs {
     flex-direction: column;
     gap: 1rem;
     align-items: stretch;
@@ -678,7 +694,7 @@ section {
   flex-direction: column;
   gap: 3.5rem;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 /* Ensure consistent spacing in all tab sections (Logo, Wizytówki, Ulotki/Menu) */
@@ -687,13 +703,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .gallery-item {
-  background: #161616;
+  background: #f4f0ec;
   border-radius: 1.2rem;
-  box-shadow: 0 0 12px #ffffff;
+  box-shadow: 0 0 12px #6e1f2a;
   padding: 2.5rem 2rem;
   width: 100%;
   max-width: 900px; /* was 600px, now wider */
@@ -709,10 +725,10 @@ section {
   display: block;                    /* make it a block so it sits on its own line above the image */
   width: fit-content;                /* narrow, only as wide as the text + padding */
   max-width: calc(100% - 4rem);      /* never exceed project inner width */
-  margin: 0 auto 2rem auto;          /* centered and spaced from the content below */
+  margin: 0 auto 0.8rem auto;        /* keep title close to image without huge gap */
   padding: 0.5rem 1.1rem;            /* thin bar */
   background: none;
-  color: #ffffff;                    /* white text color */
+  color: #222222;                    /* white text color */
   border-radius: 8px;                /* rounded corners */
   font-family: 'Outfit', sans-serif; /* new font for titles */
   font-size: 2rem;
@@ -757,10 +773,34 @@ section {
   max-width: 240px;
 }
 
+/* Make sm_multilog preview noticeably larger */
+.gallery-item img[src="sm_multilog.png"] {
+  max-width: 620px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Make the ad creative mockup preview larger too */
+.gallery-item img[src="NordCamp_Mockup.png"] {
+  max-width: 700px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Make miniatury preview a bit larger but still aligned with NordCamp mockup */
+.gallery-item img[src="miniatury.png"] {
+  max-width: 660px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
 .gallery-caption {
   margin-top: 1.2rem;
   font-size: 1.6rem;
-  color: white;
+  color: #222222;
   text-align: justify;
   line-height: 1.6;
 }
@@ -794,13 +834,20 @@ section {
   max-width: 300px; /* same as main.jpg or adjust as needed */
   border-radius: 1rem;
   background: transparent;
-  box-shadow: 0 0 40px 8px rgba(255,255,255,0.25); /* soft white glow */
+  box-shadow: 0 0 40px 8px rgba(110,31,42,0.25); /* soft glow */
   margin-bottom: 1.5rem;
 }
 
 /* Hide all tab sections by default */
 .tab-section {
   display: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#realizacje .tab-section {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 
@@ -809,9 +856,28 @@ section {
   display: block !important;
 }
 
+#social {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#social .project-title {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+#social .gallery {
+  margin-top: 0;
+}
+
+#social .gallery-item {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Make "zdrowa-micha-menu.jpg" bigger in the gallery */
-.gallery-item img.ah-main[src="zdrowa-micha-menu.jpg"] {
-  max-width: 600px; /* or match the size of lunera.png */
+.gallery-item img.ah-main[src="zdrowa-micha-menu.png"] {
+  max-width: 520px;
   width: 100%;
   height: auto;
   display: block;
@@ -849,9 +915,9 @@ section {
   margin-bottom: 1.5rem;
 }
 
-/* Make EGCreate.png larger in portfolio */
+/* Make EGCreate.png smaller in portfolio */
 .gallery-item img[src="EGCreate.png"] {
-  max-width: 600px;
+  max-width: 180px !important;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -936,7 +1002,7 @@ section {
   padding: 1.2rem;
   aspect-ratio: 1 / 1;      /* make items square */
   overflow: hidden;         /* crop any overflow from enlarged images */
-  background: rgba(255,255,255,0.02);
+  background: #f4f0ec;
   border-radius: 12px;
 }
 
@@ -1075,7 +1141,7 @@ section {
   line-height: 1.1;
   
   /* purple gradient text */
-  background: linear-gradient(90deg, #b85cff 0%, #9a45ff 50%, #7a3bff 100%);
+  background: linear-gradient(90deg, #6e1f2a 0%, #6e1f2a 50%, #6e1f2a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1096,7 +1162,7 @@ section {
 .home-content .lead {
   font-size: 1.8rem;
   line-height: 1.4;
-  color: #ffffff;
+  color: #222222;
   margin: 0;
   text-align: justify;
   max-width: 60ch; /* keep readable width */
@@ -1109,12 +1175,12 @@ section {
 
 /* Blinking caret animation - only visible during typing */
 .typewrite.typing-caret {
-  border-right: 2px solid rgba(184,92,255,0.95);
+  border-right: 2px solid #6e1f2a;
   animation: blinkCaret 700ms steps(1) infinite;
 }
 
 @keyframes blinkCaret {
-  0%, 49% { border-right-color: rgba(184,92,255,0.95); }
+  0%, 49% { border-right-color: #6e1f2a; }
   50%, 100% { border-right-color: transparent; }
 }
 
@@ -1137,7 +1203,7 @@ section {
 .home .home-content h1 {
   font-size: 6rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #222222;
   line-height: 1.05;
   margin: 0;
 }
@@ -1148,14 +1214,8 @@ section {
 }
 /* --- JEDYNA PRAWIDŁOWA REGUŁA DLA "Ewelina" (H1 SPAN) --- */
 .home .home-content h1 span {
-    /* Użycie fioletowego gradientu */
-    background: linear-gradient(90deg, #b85cff 0%, #9a45ff 50%, #7a3bff 100%);
-    
-    /* Wymagane, aby gradient był widoczny */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent; 
+    /* Zwykły kolor tekstu */
+    color: #222222; 
     
     /* Style typograficzne */
     font-family: 'Work Sans', sans-serif;
@@ -1231,9 +1291,9 @@ header .logo {
 /* kontrola wielkości logo */
 header .logo img {
   display: block;       /* eliminuje whitespace pod obrazkiem */
-  max-height: 120px;     /* dopasuj wysokość do nawigacji */
+  max-height: 78px;     
   width: auto;
-  height: auto;
+  height: 78px;
 }
 
 /* opcjonalnie - na małych ekranach */
